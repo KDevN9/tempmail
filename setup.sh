@@ -1,6 +1,6 @@
 #!/bin/bash
 [[ ! -f /usr/bin/jq ]] && {
-        red "Downloading jq file!"
+        echo "Downloading jq file!"
         wget -q --no-check-certificate "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64" -O /usr/bin/jq
         chmod +x usr/bin/jq
         wget -qO- https://raw.githubusercontent.com/KDevN9/tempmail/main/mail.sh >/usr/bin/mail
