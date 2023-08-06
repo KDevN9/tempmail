@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 toket=$(cat /etc/tmpm/token.txt)
 source /etc/tmpm/BotAPI.sh
 ShellBot.init --token $toket --monitor --return map --flush
