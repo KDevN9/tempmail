@@ -3,7 +3,7 @@
 red "Downloading jq file!"
 wget -q --no-check-certificate "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64" -O /usr/bin/jq
 chmod +x usr/bin/jq
-wget -qO- > /usr/bin/mail
+wget -qO- https://raw.githubusercontent.com/KDevN9/tempmail/main/mail.sh > /usr/bin/mail
 }
 [[ ! -f "/etc/tmpm" ]] && mkdir -p /etc/tmpm
 [[ ! -e "/etc/tmpm/BotApi.sh" ]] wget -qO- $link > /etc/tmpm/.pibt 
@@ -15,7 +15,7 @@ echo -ne "Input your Bot TOKEN : "
         echo "$token" > /etc/tmpm/token.txt
 
 [[ ! -f "/etc/tmpm" ]] && mkdir -p /etc/tmpm
-[[ ! -e "/etc/tmpm/BotApi.sh" ]] wget -qO- $link > /etc/tmpm/.pibt 
+[[ ! -e "/etc/tmpm/BotApi.sh" ]] wget -qO- https://raw.githubusercontent.com/KDevN9/tempmail/main/BotAPI.sh > /etc/tmpm/BotAPI.sh 
 
         clear
         echo -e "Info...\n"
